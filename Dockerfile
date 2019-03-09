@@ -17,6 +17,6 @@ RUN apk update && apk add --no-cache \
     bash
 RUN npm install -g webpack
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src
 
 ENTRYPOINT yarn && npm run-script build
